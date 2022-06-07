@@ -8,12 +8,14 @@ import { InstrumentenUebersichtComponent } from './instrumenten-uebersicht/instr
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatCardModule} from '@angular/material/card';
+import { SaiteninsUebersichtComponent } from './saitenins-uebersicht/saitenins-uebersicht.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartseiteComponent,
-    InstrumentenUebersichtComponent
+    InstrumentenUebersichtComponent,
+    SaiteninsUebersichtComponent
   ],
   imports: [
     BrowserModule,
