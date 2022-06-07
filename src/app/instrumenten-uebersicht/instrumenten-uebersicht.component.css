@@ -1,0 +1,23 @@
+img{
+    max-width: 100%;
+}
+h1{
+    text-align: center;
+}
+.KategorienLinks{
+    float: left;
+    margin-left: 14%;
+    max-width: 500px;
+    margin-top: 1%;
+}
+.KategorienRechts{
+    float: right;
+    margin-right: 14%;
+    max-width: 500px;
+    margin-top: 1%;
+}
+p{
+    margin-right: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
