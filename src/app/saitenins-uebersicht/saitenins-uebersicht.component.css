@@ -1,0 +1,27 @@
+img{
+    max-width: 100%;
+    max-width: 350px;
+    float: left;
+}
+h1,h2,p{
+    text-align: center;
+}
+.KategorienLinks{
+    float: left;
+    margin-left: 4%;
+    max-width: 660px;
+    margin-top: 1%;
+}
+.KategorienRechts{
+    float: right;
+    margin-right: 4%;
+    max-width: 660px;
+    margin-top: 1%;
+}
+mat-card{
+    height: 300px;
+}
+mat-card-contend{
+    float: right;
+    margin-left: 100px;
+}
