@@ -1,0 +1,47 @@
+.hülle{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+.bild{
+    width: 49%;
+    float: left;
+}
+.text{
+    width: 49%;
+    float: right;
+}
+.probe{
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+.bilder{
+    width: 100%;
+    border-radius: 5px;
+}
+.instrument{
+    align-items: center;
+}
+app-klavier{
+    margin-top: 10px;
+}
+.klavieru{
+    margin-left: 100px;
+    width: 544px;
+}
+mat-card{
+    background-color: #202020;
+    color: white;
+}
+.textBeschreibung{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    float: left;
+    margin-top: 20px;
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-blasins-uebersicht',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlasinsUebersichtComponent implements OnInit {
 
-  constructor() { }
+  constructor(private elementRef: ElementRef) { }
 
   inst:Instrument [] = [
     {picture:'assets/img/blasins/Klarinette.jpg', title:'MONATSMIETE KLARINETTE', text1:'hochwertiges Markeninstrument (Schreiber, Yamaha o.ä.) inklusive Mundstück, Blattschraube, Etui', text2:'Edles Grenadillholz in seiner schönsten Verwendung. Bitte denken Sie auch an Blätter, Wischer, Bissgummis etc. in unserem Service Pack  (siehe ganz unten). Wir beraten hierzu gerne auch telefonisch.', price:'Ab 33,00 €', orientation:'KategorienLinks'},
@@ -18,6 +18,7 @@ export class BlasinsUebersichtComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#333533'; 
   }
 
 }

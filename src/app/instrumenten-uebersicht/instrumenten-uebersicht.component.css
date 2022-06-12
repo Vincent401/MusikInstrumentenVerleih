@@ -3,6 +3,7 @@ img{
 }
 h1{
     text-align: center;
+    color: white;
 }
 .KategorienLinks{
     float: left;
@@ -20,4 +21,7 @@ p{
     margin-right: 5%;
     margin-right: 5%;
     margin-top: 5%;
+}
+mat-card{
+    background-color: #202020;
 }
