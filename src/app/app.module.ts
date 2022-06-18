@@ -13,7 +13,7 @@ import { BlasinsUebersichtComponent } from './blasins-uebersicht/blasins-uebersi
 import { TasteninsUebersichtComponent } from './tastenins-uebersicht/tastenins-uebersicht.component';
 import { SchlaginsUebersichtComponent } from './schlagins-uebersicht/schlagins-uebersicht.component';
 import { InstrumentenSeiteComponent } from './instrumenten-seite/instrumenten-seite.component';
-import { KlavierComponent } from './klavier/klavier.component
+import { KlavierComponent } from './klavier/klavier.component';
 import {  MatIconModule } from '@angular/material/icon';
 
 @NgModule({
