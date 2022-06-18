@@ -12,6 +12,8 @@ import { SaiteninsUebersichtComponent } from './saitenins-uebersicht/saitenins-u
 import { BlasinsUebersichtComponent } from './blasins-uebersicht/blasins-uebersicht.component';
 import { TasteninsUebersichtComponent } from './tastenins-uebersicht/tastenins-uebersicht.component';
 import { SchlaginsUebersichtComponent } from './schlagins-uebersicht/schlagins-uebersicht.component';
+import { InstrumentenSeiteComponent } from './instrumenten-seite/instrumenten-seite.component';
+import { KlavierComponent } from './klavier/klavier.component
 import {  MatIconModule } from '@angular/material/icon';
 
 @NgModule({
@@ -22,7 +24,9 @@ import {  MatIconModule } from '@angular/material/icon';
     SaiteninsUebersichtComponent,
     BlasinsUebersichtComponent,
     TasteninsUebersichtComponent,
-    SchlaginsUebersichtComponent
+    SchlaginsUebersichtComponent,
+    InstrumentenSeiteComponent,
+    KlavierComponent
   ],
   imports: [
     BrowserModule,

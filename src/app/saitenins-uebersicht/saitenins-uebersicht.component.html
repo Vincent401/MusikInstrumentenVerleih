@@ -1,11 +1,20 @@
-<mat-card [class]="Instrument.orientation" *ngFor="let Instrument of inst;">
-    <img [src]="Instrument.picture" alt="Gitarre">
-    <mat-card-content>
-        <h1>{{Instrument.title}}</h1>
-        <p>{{Instrument.text1}}</p>
-        <br>
-        <p>{{Instrument.text2}}</p>
-        <br>
-        <h2>{{Instrument.price}}</h2>
-    </mat-card-content>
-</mat-card>
+<div class="wrapper">
+<div class="hülle" *ngFor="let Instrument of inst;">
+    <a href="/instseite">
+        <mat-card [class]="Instrument.orientation">
+            <div class="Bild">
+                <img [src]="Instrument.picture" alt="Gitarre">
+            </div>
+            <div class="text">
+                    <h1 class="ueberschrift">{{Instrument.title}}</h1>
+                    <div class="htext">
+                        <p>{{Instrument.text1}}</p>
+                        <p>{{Instrument.text2}}</p>
+                    </div>
+                
+                    <h2 class="preis">{{Instrument.price}}</h2>
+            </div>
+        </mat-card>
+    </a>
+</div>
+</div>

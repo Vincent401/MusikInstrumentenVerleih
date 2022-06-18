@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-saitenins-uebersicht',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SaiteninsUebersichtComponent implements OnInit {
 
-  constructor() { }
+  constructor(private elementRef: ElementRef) { }
 
   inst:Instrument [] = [
     {picture:'assets/img/saitenins/Gitarre.jpg', title:'MONATSMIETE AKUSTISCHE GITARRE', text1:'hochwertiges Markeninstrument mit Massivholz Decke inklusive robuster Gitarrenhülle', text2:'Wenn Sie mit einer kleineren Gitarre beginnen wächst das Instrument im laufenden Vertrag selbstverständlich mit. Ein Anruf genügt.', price:'18,00 €', orientation:'KategorienLinks'},
@@ -16,6 +16,7 @@ export class SaiteninsUebersichtComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#333533'; 
   }
 
 }

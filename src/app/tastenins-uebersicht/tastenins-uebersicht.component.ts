@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tastenins-uebersicht',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TasteninsUebersichtComponent implements OnInit {
 
-  constructor() { }
+  constructor(private elementRef: ElementRef) { }
 
   inst:Instrument [] = [
     {picture:'assets/img/tastenins/Keyboard.jpg', title:'MONATSMIETE KEYBOARD', text1:'hochwertiges Yamaha Keyboard inklusive robuster Hülle, Netzteil. Optional mit Scherenständer und robuster, klappbarer Sitzbank.', text2:'Das Ding spielt wirklich von selbst. Zumindest den Demosong und die Lidbegleitung. Für noch mehr Spielfreude rund um die Uhr beachten Sie auch den Service Pack mit Kopfhörern.  (siehe ganz unten)', price:'Ab 28,00 €', orientation:'KategorienLinks'},
@@ -15,6 +15,7 @@ export class TasteninsUebersichtComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#333533'; 
   }
 
 }

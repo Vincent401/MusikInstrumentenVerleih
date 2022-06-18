@@ -1,23 +1,42 @@
 img{
-    max-width: 100%;
+    width: 100%;
 }
 h1{
     text-align: center;
+    color: white;
+    text-size-adjust: calc(10);
 }
-.KategorienLinks{
+a{
+    text-decoration: none;
+}
+mat-card{
+    background-color: #202020;
+}
+.wrapper{
+    height: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.huelle{
     float: left;
-    margin-left: 14%;
-    max-width: 500px;
-    margin-top: 1%;
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
 }
-.KategorienRechts{
-    float: right;
-    margin-right: 14%;
-    max-width: 500px;
-    margin-top: 1%;
+
+@media only screen and (max-width: 1000px) {
+
+.wrapper{
+    margin-left: 1%;
+    margin-right: 1%;
 }
-p{
-    margin-right: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+.huelle{
+    width: 98%;
+}
 }
