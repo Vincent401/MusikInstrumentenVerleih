@@ -54,5 +54,34 @@ span.border {
     top: 70%;
     width: 100%;
     text-align: center;
-    color: #000;
+    color: #000;    
+}
+.caption :hover{
+    background-color: grey;
+}
+
+/**/
+.pageWrapper{
+    float: left;
+}
+
+/*Media queries*/
+/*Desktop big*/
+@media only screen and (min-width: 1300px) {
+    .content{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+/*Phone*/
+@media only screen and (max-width: 530px) {
+    span.border {        
+        font-size: 25px;
+        max-width: 100%;
+        letter-spacing: 5px;
+    }
+    .content{
+        letter-spacing: 5px;
+    }
+    
 }

@@ -12,6 +12,7 @@ import { SaiteninsUebersichtComponent } from './saitenins-uebersicht/saitenins-u
 import { BlasinsUebersichtComponent } from './blasins-uebersicht/blasins-uebersicht.component';
 import { TasteninsUebersichtComponent } from './tastenins-uebersicht/tastenins-uebersicht.component';
 import { SchlaginsUebersichtComponent } from './schlagins-uebersicht/schlagins-uebersicht.component';
+import {  MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { SchlaginsUebersichtComponent } from './schlagins-uebersicht/schlagins-u
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

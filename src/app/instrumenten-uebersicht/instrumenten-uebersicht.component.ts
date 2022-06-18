@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-instrumenten-uebersicht',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstrumentenUebersichtComponent implements OnInit {
 
-  constructor() { }
+  constructor(protected appComp: AppComponent) { }
 
   ngOnInit(): void {
+    this.appComp.setNavabarActive("uebersicht");
   }
 
 }
