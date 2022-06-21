@@ -1,88 +1,89 @@
-.hülle{
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
-}
-.bild{
-    width: 49%;
-    float: left;
-}
-.text{
-    width: 49%;
-    float: right;
-}
-.probe{
-    float: left;
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 20px;
-    text-align: center;
-    color: white;
-}
-.bilder{
-    width: 100%;
-    border-radius: 5px;
-}
-.instrument{
-    align-items: center;
-}
-app-klavier{
-    margin-top: 10px;
-}
-.klavieru{
-    margin-left: 100px;
-    width: 544px;
-}
 mat-card{
     background-color: #202020;
     color: white;
 }
+.wrapper{
+    padding-left: 10%;
+    padding-right: 10%;    
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 80%;
+    float: left;
+    background-color: #111111;
+}
+
+/* Instrument image */
+.imgWrap{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.imgWrap > img{    
+    display: block;
+    position: absolute;    
+    height: 100%;
+    width: 49%;
+}
+
+/* Instrument description top */
+.text{
+    width: 49%;
+    float: right;
+}
+
+/* Instrument description bottom */
 .textBeschreibung{
-    width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 100%;    
     float: left;
     margin-top: 20px;
 }
+
+/* Instrument showcase */
+.showcaseWrap{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+.showcase{
+    align-items: center;
+}
+
+
+/* Media queries */
+/* laptop */
 @media only screen and (max-width: 1000px) {
-    .hülle{
-        margin-left: 1%;
-        margin-right: 1%;
+    .wrapper{
+        padding-left: 1%;
+        padding-right: 1%;
         width: 98%;
-    }
-    .probe{
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
-    .textBeschreibung{
-        width: 70%;
-        margin-left: 15%;
-        margin-right: 15%;
     }
 }
+/* phone */
 @media only screen and (max-width: 700px) {
-    .bild{
+    .wrapper{
         width: 98%;
-        margin-left: 1%;
-        margin-right: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
     }
+    
     .text{
-        width: 98%;
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 2%;
+        padding-top: 350px;
+        width: 100%;
         float: left;
     }
-    .probe{
-        width: 96%;
-        margin-left: 2%;
-        margin-right: 2%;
+
+    /* Instrument image */
+    .imgWrap{
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
     }
-    .textBeschreibung{
-        width: 96%;
-        margin-left: 2%;
-        margin-right: 2%;
+    .imgWrap > img{    
+        display: block;
+        position: absolute;    
+        height: 50%;
+        width: 100%;
     }
 }
