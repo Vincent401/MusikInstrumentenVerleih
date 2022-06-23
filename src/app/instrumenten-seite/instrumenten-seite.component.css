@@ -5,7 +5,7 @@ mat-card{
 .wrapper{
     padding-left: 10%;
     padding-right: 10%;    
-    padding-top: 50px;
+    padding-top: 5%;
     padding-bottom: 100px;
     width: 80%;
     float: left;
@@ -45,9 +45,24 @@ mat-card{
     margin-top: 20px;
     text-align: center;
     color: white;
+    display: none;
 }
 .showcase{
     align-items: center;
+}
+.klavierShow{
+    border:0px solid #eee; 
+    overflow:hidden; 
+    width:100%; 
+    height:340px;
+    display: none;
+}
+.gitarreShow{
+    border:0px solid #eee; 
+    overflow:hidden; 
+    width:100%;
+     height:340px;
+     display: none;
 }
 
 
@@ -58,6 +73,9 @@ mat-card{
         padding-left: 1%;
         padding-right: 1%;
         width: 98%;
+    }
+    .klavierShow, .gitarreShow{
+        height: 300px;
     }
 }
 /* phone */
@@ -85,5 +103,8 @@ mat-card{
         position: absolute;    
         height: 50%;
         width: 100%;
+    }
+    .klavierShow, .gitarreShow{
+        height: 240px;
     }
 }

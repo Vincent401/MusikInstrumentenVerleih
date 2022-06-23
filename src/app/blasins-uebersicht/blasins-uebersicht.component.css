@@ -38,10 +38,10 @@ mat-card{
     margin-top: 1%;
 }
 .wrapper{
-    padding-top: 50px;
     float: left;
     padding-left: 2%;
     padding-right: 2%;
+    margin-top: 5%;
     background-color: #111;
 }
 .htext{
