@@ -1,6 +1,6 @@
 <div class="wrapper">
 <div class="hülle" *ngFor="let Instrument of inst;">
-    <a href="/instseite">
+    <a href="/instseite" (click)="setCurentInst(Instrument.title)">
 <mat-card [class]="Instrument.orientation">
     <div class="Bild">
         <img [src]="Instrument.picture" alt="Schlaginstrumente">
