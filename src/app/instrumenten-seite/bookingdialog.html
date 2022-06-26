@@ -1,0 +1,54 @@
+<mat-stepper [linear]="true" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Kontaktdaten</ng-template>
+            <mat-form-field appearance="fill">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="Nachname, Vorname" formControlName="firstCtrl" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">                
+                <mat-label>E-Mail</mat-label>
+                <input matInput placeholder="email@beispiel.de" formControlName="firstCtrl" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">                
+                <mat-label>Telefon</mat-label>
+                <input matInput placeholder="+49 XXX XXXXXXXX" formControlName="firstCtrl" required>
+            </mat-form-field>
+            <div>
+                <button mat-button matStepperNext>Nächste</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Rechnungsinformationen">
+        <form [formGroup]="secondFormGroup">
+            <mat-form-field appearance="fill">
+                <mat-label>Str. & Nr.</mat-label>
+                <input matInput formControlName="secondCtrl" placeholder="Hauptstrasse 12" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Plz</mat-label>
+                <input matInput formControlName="secondCtrl" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Stadt</mat-label>
+                <input matInput formControlName="secondCtrl" required>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>IBAN</mat-label>
+                <input matInput formControlName="secondCtrl" required>
+            </mat-form-field>
+            <div>
+                <button mat-button matStepperPrevious>Vorherige</button>
+                <button mat-button matStepperNext>Nächste</button>
+            </div>
+        </form>
+    </mat-step>
+    <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        <p>Alles Erledigt</p>
+        <div>
+            <button mat-button matStepperPrevious>Vorherige</button>
+            <button mat-button (click)="stepper.reset()">Reset</button>
+        </div>
+    </mat-step>
+</mat-stepper>

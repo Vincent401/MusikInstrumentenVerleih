@@ -1,0 +1,89 @@
+mat-card{
+    background-color: #202020;
+    color: white;
+}
+.wrapper{
+    padding-left: 10%;
+    padding-right: 10%;    
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 80%;
+    float: left;
+    background-color: #111111;
+}
+
+/* Instrument image */
+.imgWrap{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.imgWrap > img{    
+    display: block;
+    position: absolute;    
+    height: 100%;
+    width: 49%;
+}
+
+/* Instrument description top */
+.text{
+    width: 49%;
+    float: right;
+}
+
+/* Instrument description bottom */
+.textBeschreibung{
+    width: 100%;    
+    float: left;
+    margin-top: 20px;
+}
+
+/* Instrument showcase */
+.showcaseWrap{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+.showcase{
+    align-items: center;
+}
+
+
+/* Media queries */
+/* laptop */
+@media only screen and (max-width: 1000px) {
+    .wrapper{
+        padding-left: 1%;
+        padding-right: 1%;
+        width: 98%;
+    }
+}
+/* phone */
+@media only screen and (max-width: 700px) {
+    .wrapper{
+        width: 98%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    .text{
+        padding-top: 350px;
+        width: 100%;
+        float: left;
+    }
+
+    /* Instrument image */
+    .imgWrap{
+        position: relative;
+        display: inline-block;
+        overflow: hidden;
+    }
+    .imgWrap > img{    
+        display: block;
+        position: absolute;    
+        height: 50%;
+        width: 100%;
+    }
+}
