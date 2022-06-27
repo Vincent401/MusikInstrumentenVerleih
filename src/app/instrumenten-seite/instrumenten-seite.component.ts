@@ -6,7 +6,6 @@ import { AppComponent } from '../app.component';
 import { RentService } from '../Service_Rent/rent.service';
 
 
-
 @Component({
   selector: 'app-instrumenten-seite',
   templateUrl: './instrumenten-seite.component.html',
@@ -14,7 +13,7 @@ import { RentService } from '../Service_Rent/rent.service';
 })
 export class InstrumentenSeiteComponent implements OnInit {
 
-  constructor(private elementRef: ElementRef, public dialog: MatDialog, public appcomp: AppComponent) { }
+  constructor(private elementRef: ElementRef, public dialog: MatDialog, private appcomp: AppComponent) { }
   inst =  this.appcomp.myFunction2();
 
   ngOnInit(): void {
@@ -59,7 +58,7 @@ export class InstrumentenSeiteComponent implements OnInit {
   templateUrl: 'bookingdialog.html',
 })
 export class BookingDialog {
-  name:string;
+  //inst =  this.appcomp.myFunction2();
   firstFormGroup = this._formBuilder.group({
     name: ['', Validators.required],
     mail: ['', Validators.required],
@@ -75,23 +74,25 @@ export class BookingDialog {
   constructor(
     public dialogRef: MatDialogRef<BookingDialog>,    
     private _formBuilder: FormBuilder,
-    private rentService: RentService,
+    private rentService: RentService,   
+    private appcomp: AppComponent,
   ){}
 
   onNoClick(): void {
     this.dialogRef.close();
   }
-  
- send():void {    
+
+  inst =  this.appcomp.myFunction2();
+  send():void {       
     this.rentService.sendPostRent(
       this.firstFormGroup.controls["name"].value,
       this.firstFormGroup.controls["mail"].value,
       this.firstFormGroup.controls["phone"].value,
       this.secondFormGroup.controls["street"].value,
-      this.secondFormGroup.controls["zip"].value,
+      parseInt(this.secondFormGroup.controls["zip"].value),
       this.secondFormGroup.controls["city"].value,
       this.secondFormGroup.controls["iban"].value,
-      ""
+      this.inst.title
     );    
   }
 }
