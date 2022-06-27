@@ -89,7 +89,7 @@ export class BookingDialog {
       this.firstFormGroup.controls["mail"].value,
       this.firstFormGroup.controls["phone"].value,
       this.secondFormGroup.controls["street"].value,
-      this.secondFormGroup.controls["zip"].value,
+      parseInt(this.secondFormGroup.controls["zip"].value),
       this.secondFormGroup.controls["city"].value,
       this.secondFormGroup.controls["iban"].value,
       this.inst.title

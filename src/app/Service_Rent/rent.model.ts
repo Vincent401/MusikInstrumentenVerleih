@@ -3,7 +3,7 @@ export class Rent {
     mail: String;
     phone: String;
     street: String;
-    zip: String;
+    zip: number;
     city: String;
     iban: String;
 }
