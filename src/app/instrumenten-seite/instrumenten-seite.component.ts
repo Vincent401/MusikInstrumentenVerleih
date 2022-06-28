@@ -66,7 +66,7 @@ export class BookingDialog {
   
   firstFormGroup = this._formBuilder.group({
     name: ['', Validators.required],
-    mail: ['', Validators.required],
+    mail: ['', Validators.email],
     phone: ['', Validators.required],
   });
   secondFormGroup = this._formBuilder.group({
