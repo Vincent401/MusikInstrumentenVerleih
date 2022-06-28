@@ -3,13 +3,12 @@ mat-card{
     color: white;
 }
 
-
 .wrapper{
-    padding-left: 10%;
-    padding-right: 10%;    
+    padding-left: 10vw;
+    padding-right: 10vw;    
     padding-top: 5%;
     padding-bottom: 100px;
-    width: 80%;
+    width: 80vw;
     float: left;
     background-color: #111111;
     min-height: 100%;
@@ -20,6 +19,7 @@ mat-card{
     position: relative;
     display: inline-block;
     overflow: hidden;
+    width: 100%;
 }
 .imgWrap > img{    
     display: block;
