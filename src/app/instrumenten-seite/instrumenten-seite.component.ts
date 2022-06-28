@@ -4,6 +4,8 @@ import { MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialo
 import { FormBuilder, Validators} from '@angular/forms';
 import { AppComponent } from '../app.component';
 import { RentService } from '../Service_Rent/rent.service';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import {MatButtonModule} from '@angular/material/button';
 
 export interface dialogData{
   instrument: string;
@@ -16,11 +18,16 @@ export interface dialogData{
   styleUrls: ['./instrumenten-seite.component.css']
 })
 export class InstrumentenSeiteComponent implements OnInit {
+  safeHtml: SafeHtml;
 
-  constructor(private elementRef: ElementRef, public dialog: MatDialog, private appcomp: AppComponent) { }
+  constructor(private elementRef: ElementRef, public dialog: MatDialog, private appcomp: AppComponent, private sanitizer: DomSanitizer) { }
   inst =  this.appcomp.myFunction2();
 
   ngOnInit(): void {
+    this.safeHtml = this.sanitizer.bypassSecurityTrustHtml(
+      this.inst.text3)
+
+
     this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#333533'; 
     KlavierComponent;
     this.inst =  this.appcomp.myFunction2();
@@ -61,6 +68,7 @@ export class InstrumentenSeiteComponent implements OnInit {
 @Component({
   selector: 'booking-dialog',
   templateUrl: 'bookingdialog.html',
+  styleUrls: ['./instrumenten-seite.component.css']
 })
 export class BookingDialog {
   
@@ -84,7 +92,7 @@ export class BookingDialog {
   ){}
 
   onNoClick(): void {
-    this.dialogRef.close();
+    
   }
 
   
@@ -99,6 +107,7 @@ export class BookingDialog {
       this.secondFormGroup.controls["iban"].value,
       this.data.instrument
     );    
+    this.dialogRef.close();
   }
 }
 
@@ -107,6 +116,7 @@ class Instrument {
   title : string;  
   text1 : string;  
   text2 : string;  
+  text3: string;
   price : string;  
   orientation : string;
 }  

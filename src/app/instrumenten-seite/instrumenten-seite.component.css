@@ -2,6 +2,8 @@ mat-card{
     background-color: #202020;
     color: white;
 }
+
+
 .wrapper{
     padding-left: 10%;
     padding-right: 10%;    
@@ -10,6 +12,7 @@ mat-card{
     width: 80%;
     float: left;
     background-color: #111111;
+    min-height: 100%;
 }
 
 /* Instrument image */

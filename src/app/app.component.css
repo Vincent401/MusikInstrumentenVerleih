@@ -1,6 +1,7 @@
 body{
-    background-color: #111;
+    background-color: #111111;
     float: left;
+    min-height: 100%;
 }
 
   
