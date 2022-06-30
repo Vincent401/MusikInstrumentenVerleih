@@ -40,8 +40,8 @@ export class AppComponent {
     {
       picture:'assets/img/blasins/Klarinette.jpg', 
       title:'KLARINETTE', 
-      text1:'hochwertiges Markeninstrument (Schreiber, Yamaha o.ä.) inklusive Mundstück, Blattschraube, Etui', 
-      text2:'Edles Grenadillholz in seiner schönsten Verwendung. Bitte denken Sie auch an Blätter, Wischer, Bissgummis etc. in unserem Service Pack  (siehe ganz unten). Wir beraten hierzu gerne auch telefonisch.',
+      text1:'hochwertiges Markeninstrument inklusive Mundstück, Blattschraube, Etui', 
+      text2:'Edles Grenadillholz in seiner schönsten Verwendung. Bitte denken Sie auch an Blätter, Wischer, Bissgummis etc. in unserem Service Pack. Wir beraten hierzu gerne auch telefonisch.',
       text3:"<table><tr><td>SKU:</td><td>BC1131L-2-0</td></tr><tr><td>Marke:</td><td>BuffetCrampon</td></tr><tr><td>Kategorie:</td><td>B-Klarinetten</td></tr><tr><td>Serie:</td><td>R13</td></tr><tr><td>Stimmung:</td><td>B</td></tr><tr><td>Griffweise:</td><td>BöhmSystem</td></tr><tr><td>Material:</td><td>Grenadill,versilberteMechanik</td></tr><tr><td>Ausführung:</td><td>polyzylindrischeBohrung,Es-Heber,18Klappen,6Ringe,doppelteFischhautpolster,verstellbarerDaumenhalter,BlaustahlNadelfedern</td></tr><tr><td>Optionen:</td><td>KorpusinGreenLine,KorpusinMopane</td></tr><tr><td>Geeignetfür:</td><td>Fortgeschrittene,Hobbymusiker,Musik-Studenten</td></tr><tr><td>Inklusive:</td><td>Etui,Putzset,Zubehör</td></tr></table>", 
       price:'Ab 33,00 €', 
       orientation:'KategorienLinks'
@@ -49,16 +49,16 @@ export class AppComponent {
     {
       picture:'assets/img/blasins/Posaune.jpg', 
       title:'POSAUNE', 
-      text1:'hochwertiges Markeninstrument (Yamaha, Jupiter o.ä.) inklusive Mundstück, Etui', 
-      text2:'Bitte denken Sie auch an Wischer, Fett und Öl etc. in unserem ServicePack  (siehe ganz unten). Wir beraten hierzu gerne auch telefonisch.',
+      text1:'hochwertiges Markeninstrument inklusive Mundstück, Etui', 
+      text2:'Bitte denken Sie auch an Wischer, Fett und Öl etc. in unserem ServicePack. Wir beraten hierzu gerne auch telefonisch.',
       text3:"<table><tr><td>SKU:</td><td>BSMS14-1-0</td></tr><tr><td>Marke:</td><td>B&S Markneukirchen</td></tr><tr><td>Kategorie:</td><td>Tenorposaunen mit Quartventil</td></tr><tr><td>Serie:</td><td>Meistersinger</td></tr><tr><td>Stimmung:</td><td>B/F</td></tr><tr><td>Material:</td><td>handgehämmerter Rotmessing Schallbecher, hartverchromter Innenzug aus Neusilber, Neusilber Zugbogen, Goldmessing Außenzüge, lackiert</td></tr><tr><td>Bohrung:</td><td>13,89 mm, Quartventilbogen 14,5 mm</td></tr><tr><td>Schalldurchmesser:</td><td>230 mm, optional: 214 mm</td></tr><tr><td>Ausführung:</td><td>handgefertigt, asymmetrische Bögen am Hauptstimmzug und am Quartventil, austauschbare Mundrohre, Quartventil mit 3B™-Kugelgelenken</td></tr><tr><td>Optionen:</td><td>Neusilber Zug, Neusilber Rand am Schallbecher</td></tr><tr><td>Geeignetfür:</td><td>Fortgeschrittene, Hobbymusiker, Musik-Studenten, Profis</td></tr><tr><td>Inklusive:</td><td>2 austauschbare Mundrohre, Etui mit Rucksackgarnitur, Mundstück, Putzset, Zubehör</td></tr></table>", 
       price:'Ab 28,00 €', orientation:'KategorienRechts'
     },
     {
       picture:'assets/img/blasins/Querflöte.jpg', 
       title:'QUERFLÖTE', 
-      text1:'hochwertiges Markeninstrument (Yamaha, Pearl o.ä.) inklusive Etui', 
-      text2:'optional mit geb. Kopf für Kinder und dem Service Pack zur Pflege der empfindsamen Klappeninstrumente  (siehe ganz unten).', 
+      text1:'hochwertiges Markeninstrument inklusive Etui', 
+      text2:'optional mit geb. Kopf für Kinder und dem Service Pack zur Pflege der empfindsamen Klappeninstrumente.', 
       text3:"<table><tr><td>SKU:</td><td>CF 401 RBEH</td></tr><tr><td>Marke:</td><td>Sankyo</td></tr><tr><td>Ausführung:</td><td>Konzertflöten</td></tr><tr><td>Ausführung:</td><td>Vollsilber Flöte, heavy</td></tr><tr><td>Kopfstück:</td><td>Sterling Silber 925AG, verschiedene Kopfstücke wählbar</td></tr><tr><td>Korpus:</td><td>Sterling Silber 925AG</td></tr><tr><td>Mechanik:</td><td>Sterling Silber 925AG, Ringklappen, E-Mechanik, Offset (vorgezogenes G), Spitzdeckelmechanik</td></tr><tr><td>Fußstück:</td><td>H-Fuß</td></tr><tr><td>Wandstärke:</td><td>0,42 mm</td></tr><tr><td>Geeignet für:</td><td>Schüler, Fortgeschrittene, Hobbymusiker, Musik-Studenten</td></tr><tr><td>Inklusive:</td><td>Etui, Putzset, Zubehör, Tasche</td></tr></table>",
       price:'Ab 23,00 €', 
       orientation:'KategorienLinks'
@@ -87,10 +87,11 @@ export class AppComponent {
       picture:'assets/img/tastenins/Keyboard.jpg', 
       title:'KEYBOARD', 
       text1:'hochwertiges Yamaha Keyboard inklusive robuster Hülle, Netzteil. Optional mit Scherenständer und robuster, klappbarer Sitzbank.', 
-      text2:'Das Ding spielt wirklich von selbst. Zumindest den Demosong und die Lidbegleitung. Für noch mehr Spielfreude rund um die Uhr beachten Sie auch den Service Pack mit Kopfhörern.  (siehe ganz unten)',
+      text2:'Das Ding spielt wirklich von selbst. Zumindest den Demosong und die Liedbegleitung. Für noch mehr Spielfreude rund um die Uhr beachten Sie auch den Service Pack mit Kopfhörern.  (siehe ganz unten)',
       text3:"<table><tr><td>SKU:</td><td>YDP-165 B</td></tr><tr><td>Marke:</td><td>    Yamaha</td></tr><tr><td>Anzahl Tasten:</td><td>88 gewichtete</td></tr><tr><td>Polyphonie: </td><td>192-stimmig</td></tr><tr><td>Sounds:</td><td>10</td></tr><tr><td>Funktionen:</td><td>Dual/Layers, Duo, Metronom</td></tr><tr><td>Kopfhöreranschluss:</td><td>2x 6,3mm Klinke</td></tr><tr><td>Lautsprecher:</td><td>2 x 20W</td></tr><tr><td>Maße:</td><td>1357 x 422 x 849 mm</td></tr><tr><td>Farbe:</td><td>Schwarz</td></tr></table>",
       price:'Ab 28,00 €', 
-      orientation:'KategorienLinks'},
+      orientation:'KategorienLinks'
+    },
     {
       picture:'assets/img/tastenins/Klavier.jpg', 
       title:'KLAVIER', 
@@ -105,8 +106,8 @@ export class AppComponent {
     {
       picture:'assets/img/schlagins/Pauke.jpg', 
       title:'PAUKE', 
-      text1:'hochwertiges Yamaha Keyboard inklusive robuster Hülle, Netzteil. Optional mit Scherenständer und robuster, klappbarer Sitzbank.', 
-      text2:'Das Ding spielt wirklich von selbst. Zumindest den Demosong und die Lidbegleitung.',
+      text1:'Langlebige Instrumente mit durchdachten Funktionen.', 
+      text2:'Das robuste Kunststofffell sorgt für gleich bleibende Tonqualität. Die Zugspannung des Fells variieren Sie einfach und exakt mit 6 Stimmschrauben.',
       text3:"<table><tr><td>SKU:</td><td>2PARFKG26</td></tr><tr><td>Marke:</td><td>Adams</td></tr><tr><td>Kategorie:</td><td>Pauken</td></tr><tr><td>Serie:</td><td>Revolution</td></tr><tr><td>Größe:</td><td>26\"</td></tr><tr><td>Kesselmaterial:</td><td>Kupfer glatt</td></tr><tr><td>Fell:</td><td>Remo Renaissance</td></tr><tr><td>Eigenschaften:</td><td>parabolischer Kessel, innovatives Balanced Action Pedalsystem, Stimmanzeiger, Feinstimmer, Untergestell leicht abnehmbar, Füße zusammenklappbar (bequemer Transport), höhenverstellbar 80 cm auf 90 cm</td></tr><tr><td>Zubehör:</td><td>Hülle (auf Anfrage), Stimmschlüssel</td></tr></table", 
       price:'Ab 15,00 €', 
       orientation:'KategorienLinks'
@@ -114,8 +115,8 @@ export class AppComponent {
     {
       picture:'assets/img/schlagins/Tamburin.jpg', 
       title:'TAMBURIN', 
-      text1:'hochwertiges Markeninstrumente von Yamaha', 
-      text2:'88 gewichtete Tasten - der perfekte Einstieg in das Klavierspiel. Für noch mehr Spielfreude rund um die Uhr beachten Sie auch den Service Pack mit Kopfhörern.  (siehe ganz unten)',
+      text1:'hochwertiges Markeninstrumente von Nino', 
+      text2:'Sehr schöne, aus Palisander gefertigtes Tamburin, sorgfältig verarbeitet. Das Palisander verleiht den Instrumenten einen hervorragenden Klang. Bespannt mit Ziegenfell. Nicht stimmbar.',
       text3:"<table><tr><td>SKU:</td><td>NINO46</td></tr><tr><td>Marke:</td><td>    Nino</td></tr><tr><td>Kranz:</td><td>Schellenkranz</td></tr><tr><td>Rahmenmaterial:</td><td>Holz</td></tr><tr><td>Bauform:</td><td>rund</td></tr><tr><td>Farbe:</td><td>Natur</td></tr><tr><td>Anzahl Schellen:</td><td>6 Paar</td></tr><tr><td>Schellenanordnung:</td><td>einreihig</td></tr><tr><td>Montagehalterung:</td><td>nein</td></tr></table>", 
       price:'Ab 18,00 €', 
       orientation:'KategorienRechts'
@@ -123,8 +124,8 @@ export class AppComponent {
     {
       picture:'assets/img/schlagins/Xylophon.jpg', 
       title:'XYLOPHON', 
-      text1:'hochwertiges Markeninstrument von Yamaha', 
-      text2:'88 gewichtete Tasten - der perfekte Einstieg in das Klavierspiel. Für noch mehr Spielfreude rund um die Uhr beachten Sie auch den Service Pack mit Kopfhörern.  (siehe ganz unten)', 
+      text1:'Perfekt für die Schule!', 
+      text2:'Das Xylophon umfasst die chromatische Tonleiter mit allen Halbtönen. Die Klangstäbe bestehen aus Rosewood (Palisander) und die jeweils 4 einzelnen Kammern im Resonanzkasten aus Ahornholz gewährleisten einen ausgezeichneten Klang.', 
       text3:"<table><tr><td>SKU:</td><td>2MBA2HRV50</td></tr><tr><td>Marke:</td><td>Yamaha</td></tr><tr><td>Kategorie:</td><td>Xylophone</td></tr><tr><td>Serie:</td><td>Artist Robert van Sice</td></tr><tr><td>Stimmung:</td><td>A=442Hz, (andere Stimmung auf Anfrage)</td></tr><tr><td>Tonumfang:</td><td>5 Oktaven, C2 – C7</td></tr><tr><td>Klangplatten:</td><td>Palisander, 72 mm – 40 mm</td></tr><tr><td>Maße:</td><td>Länge: 255 cm, Breite: 104 cm – 40 cm, Höhe: 88 cm – 108 cm</td></tr><tr><td>Zubehör:</td><td>Hülle, Schlägel, Voyager Gestell</td></tr></table>",
       price:'Ab 10,00 €', 
       orientation:'KategorienLinks'
