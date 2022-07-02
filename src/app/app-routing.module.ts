@@ -7,7 +7,6 @@ import { BlasinsUebersichtComponent } from './blasins-uebersicht/blasins-uebersi
 import { TasteninsUebersichtComponent } from './tastenins-uebersicht/tastenins-uebersicht.component';
 import { SchlaginsUebersichtComponent } from './schlagins-uebersicht/schlagins-uebersicht.component';
 import { InstrumentenSeiteComponent } from './instrumenten-seite/instrumenten-seite.component';
-import { instrumentShowcaseComponent } from './instrumentShowcase/instrumentShowcase.component';
 
 
 const routes: Routes = [
@@ -18,7 +17,6 @@ const routes: Routes = [
   { path: 'blasinst', component: BlasinsUebersichtComponent},
   { path: 'tastinst', component: TasteninsUebersichtComponent},
   { path: 'schlaginst', component: SchlaginsUebersichtComponent},
-  { path: 'showcase', component: instrumentShowcaseComponent},
   { path: 'instseite', component: InstrumentenSeiteComponent}
 
 ];

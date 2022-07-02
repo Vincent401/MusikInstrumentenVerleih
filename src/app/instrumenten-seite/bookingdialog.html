@@ -2,7 +2,7 @@
     <mat-step [stepControl]="firstFormGroup">
         <form [formGroup]="firstFormGroup">
             <ng-template matStepLabel>Kontaktdaten</ng-template>
-            <mat-form-field appearance="fill" >
+            <mat-form-field appearance="fill">
                 <mat-label>Name</mat-label>
                 <input matInput placeholder="Nachname, Vorname" formControlName="name" required>
             </mat-form-field>
@@ -15,7 +15,7 @@
                 <input  matInput placeholder="+49 XXX XXXXXXXX" formControlName="phone" required>
             </mat-form-field>
             <div>
-                <button mat-button matStepperNext>Nächste</button>                
+                <button mat-raised-button matStepperNext  color="primary">Nächste</button>                
             </div>
         </form>
     </mat-step>
@@ -38,8 +38,8 @@
                 <input matInput formControlName="iban" required>
             </mat-form-field>
             <div>
-                <button mat-button matStepperPrevious>Vorherige</button>
-                <button mat-button matStepperNext>Nächste</button>
+                <button mat-raised-button matStepperPrevious  color="warn">Vorherige</button>
+                <button mat-raised-button matStepperNext  color="primary">Nächste</button>
             </div>
         </form>
     </mat-step>
@@ -47,10 +47,8 @@
         <ng-template matStepLabel>Done</ng-template>
         <p>Alles Erledigt</p>
         <div>
-            <button mat-button matStepperPrevious>Vorherige</button>
-            <button mat-button (click)="stepper.reset()">Reset</button>
-            <button mat-button (click)="send()">send</button>
-            
+            <button mat-raised-button matStepperPrevious  color="warn">Vorherige</button>
+            <button mat-raised-button (click)="send()"  color="primary">Buchen</button>            
         </div>
     </mat-step>
 </mat-stepper>
