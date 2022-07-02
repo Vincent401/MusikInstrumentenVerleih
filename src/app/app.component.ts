@@ -150,8 +150,6 @@ export class AppComponent {
     x.className= "";
     x = document.getElementById("uebersicht");
     x.className= "";
-    x = document.getElementById("dev");
-    x.className= "";
 
     //current active
     switch(current){
@@ -161,10 +159,6 @@ export class AppComponent {
         break;
       case "uebersicht":
         x = document.getElementById("uebersicht");
-        x.className= "active";
-        break;
-      case "dev":
-        x = document.getElementById("dev");
         x.className= "active";
         break;
     }

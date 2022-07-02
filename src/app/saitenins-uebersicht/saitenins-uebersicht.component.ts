@@ -18,6 +18,7 @@ export class SaiteninsUebersichtComponent implements OnInit {
 
   ngOnInit(): void {
     this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#333533'; 
+    this.appcomp.setNavabarActive("");
   }
 
   setCurentInst(inst:String){
